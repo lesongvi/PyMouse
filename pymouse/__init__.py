@@ -26,7 +26,7 @@ if sys.platform.startswith('java'):
     from java_ import PyMouse
 
 elif sys.platform == 'darwin':
-    from mac import PyMouse, PyMouseEvent
+    from .mac import PyMouse, PyMouseEvent
 
 elif sys.platform == 'win32':
     from windows import PyMouse, PyMouseEvent
